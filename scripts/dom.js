@@ -1,51 +1,45 @@
-const escudo = document.getElementById("escudo");
+// Saludo al usuario
+const nodo = document.getElementById ("bienvenido");
+const nombre = prompt("ingrese su nombre");
 
-const data = [
-  {
-    id: 1,
-    titulo: "Barcelona",
-    imagen:
-    "https://www.sopitas.com/wp-content/uploads/2020/05/escudo-barcelona-historia-significado.png"  },
-  {
-    id: 2,
-    titulo: "Real Madrid",
-    imagen:
-  "https://www.sopitas.com/wp-content/uploads/2020/06/real-madrid-escudo-significado-corona-sin-cruz.png"  },
-  {
-    id: 3,
-    titulo: "Paris Saint-Germain",
-    imagen:
-      "http://www.brandemia.org/wp-content/uploads/2013/02/PSG_marca_escudo.jpg",
-  },
-  {
-    id: 4,
-    titulo: "Manchester United",
-    imagen:
-      "https://www.futbolsapiens.com/wp-content/uploads/2020/08/Manchester-United-logotipo.jpg",
-  },
-  {
-    id: 5,
-    titulo: "Manchester City",
-    imagen:
-      "https://www.futbox.com/img/v1/0c6/534/793/2da/d1972bbd5460343ca646.png",
-  },
-  {
-    id: 6,
-    titulo: "Atletico de Madrid",
-    imagen: "http://2.bp.blogspot.com/_5aoxzAmxfp4/SLgEKP-PWhI/AAAAAAAAArg/J4Cl-vMYjL8/s400/zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz.png",
-  },
-];
+nodo.innerHTML = `¡Bienvenid@, ${nombre}!`;
+// funcion de mi sitio
+function uefa()
+{
+    const tituloH1 = document.createElement("h1");
+    tituloH1.innerHTML="UEFA CHAMPIONS LEAGUE";
+    // titulo
+    tituloH1
+    document.body.appendChild(tituloH1);
+    // estilo de titulo
+    tituloH1.setAttribute("style","text-align:center");
+} 
+uefa()
+// Creamos un nodo de tipo de elemento "P"
+let parrafo =document.createElement ("p")
+parrafo.innerHTML="<h2>TABLA DE POSICIONES</h2>"
+parrafo.setAttribute("style","text-align:center");
 
-for (const pelicula of data) {
-  escudo.innerHTML += `
-    <div class="col">
-    <div class="card" >
-      <img src="${pelicula.imagen}"  class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">${pelicula.titulo}</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  `;
+document.body.append(parrafo);
+
+// plantilla y recorrido de clubes.
+const equipos = [{posicion: 1, club: "Barcelona", puntos: 12},
+                 { posicion: 2, club: "Real Madrid", puntos: 11},
+                 { posicion: 3, club: "Manchester United", puntos: 10},
+                 { posicion: 4, club: "PSG", puntos: 9},
+                 { posicion: 5, club: "Manchester City", puntos:8},
+                 { posicion: 6, club: "Liverpool", puntos:7 }];
+                 
+for (const equipo of equipos ) {
+    let contenedor = document.createElement("div")
+    contenedor.innerHTML = ` <h2> posicion: ${equipo.posicion}</h2>
+                             <h3>equipo: ${equipo.club}</h3>
+                             <h3>ptos ${equipo.puntos}</h3>`
+
+    document.body.appendChild(contenedor)
+
+    contenedor.setAttribute("style","text-align:center","color:red");
+    
+
 }
+le

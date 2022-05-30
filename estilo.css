@@ -1,0 +1,8 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./imagen/copa-uefa.jpg);
+    color: rgb(239, 247, 247);
+}
