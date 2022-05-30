@@ -42,4 +42,4 @@ for (const equipo of equipos ) {
     
 
 }
-le
+
