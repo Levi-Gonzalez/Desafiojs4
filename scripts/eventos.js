@@ -1,17 +1,25 @@
-const lista = document.getElementById("lista");
-const btnAgregar = document.getElementById('btn-agregar');
+// Botón 1
+const elementoA = document.getElementById("elementoA");
+	elementoA.addEventListener('click' ,() =>{
+	console.log ('click')
+	});
+// _______________________________________________________________
 
-lista.addEventListener("click"), (e) => {
-    e.target.classList.toggle ("activo");
-};
+// cambio de color en la caja
+const caja = document.getElementById("caja");
 
-btnAgregar.addEventListener('click', () => {
-	const elemento = `
-		<a href="#">
-			Elemento <i class="bi bi-check-square-fill"></i>
-		</a>
-	`;
+	caja.addEventListener("mouseenter" , () => {
+		caja.classList.add("green")
+	});
+	caja.addEventListener("mouseleave" ,() =>{
+		caja.classList.remove("green")
+	});
+//________________________________________________________________
 
-	lista.innerHTML += elemento;
+// Input
+const input = document.getElementById ("input")
+
+input.addEventListener ("keydown" , () => {
+	console.log("has pulsado una tecla")
+
 });
-// lg 
