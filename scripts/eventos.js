@@ -14,3 +14,4 @@ btnAgregar.addEventListener('click', () => {
 
 	lista.innerHTML += elemento;
 });
+// lg
