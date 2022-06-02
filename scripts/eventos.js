@@ -2,7 +2,7 @@ const lista = document.getElementById("lista");
 const btnAgregar = document.getElementById('btn-agregar');
 
 lista.addEventListener("click"), (e) => {
-    console.log(e);
+    e.target.classList.toggle ("activo");
 };
 
 btnAgregar.addEventListener('click', () => {
@@ -14,4 +14,4 @@ btnAgregar.addEventListener('click', () => {
 
 	lista.innerHTML += elemento;
 });
-// lg
+// lg 
