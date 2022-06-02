@@ -1,8 +1,71 @@
 *{
+<<<<<<< HEAD
     margin:0;
     box-sizing: border-box;
 }
 body{
     background-image: url(./imagen/copa-uefa.jpg);
     color: rgb(239, 247, 247);
+=======
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  background: #343E46;
+}
+
+h1{
+    color: #E86B19;
+}
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista {
+  width: 500px;
+}
+
+.lista a {
+  padding: 25px;
+  font-size: 20px;
+  display: block;
+  background: #4e616e;
+  color: #fff;
+  margin-bottom: 22px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .3s ease all;
+}
+
+.lista a:hover {
+  background: #E86B19;
+}
+
+
+.btn-agregar {
+  background: #E86B19;
+  border-radius: 5px;
+  padding: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  margin-bottom: 40px;
+  transition: .3s ease all;
+>>>>>>> 1533f4f (eventos)
 }
